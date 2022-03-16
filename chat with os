@@ -1,0 +1,50 @@
+import os
+print("-------Hello---Buddy--------")
+while True:
+    user_input=input("What can i do for you..:")
+    if  ("date"in user_input)or("Date" in user_input):
+        date=os.system("date")
+        print(date)
+    elif("calender"in user_input)or("Calender"in user_input):
+        cal=os.system("cal")
+        print(cal)
+    elif("myip"in user_input)or("ip"in user_input):
+        ip=os.system("ifconfig")
+        print(ip)
+    elif("firefox"in user_input)or("browser"in user_input):
+        firefox=os.system("firefox")
+        print(firefox)   
+    elif("current"in user_input)or("path"in user_input):
+        pwd=os.system("pwd")
+        print(pwd)
+    elif("show"in user_input):
+        print(""" What can you do Trough this program 
+        1.you can see current date and time 
+        2.you can see calender on current date and month
+        3.you can see you system ip address 
+        3.you can open your browser 
+        4.you can see your current directory
+        5.you can see you currently working user 
+        6.ypu can open you code editer (Gedit)
+         """)
+    elif("user"in user_input):
+        who=os.system("whoami")
+        print(who)
+    elif("open"in user_input)or("my"in user_input)and("gedit"in user_input)or("editer"in user_input):
+        gedit=os.system("gedit")
+        print(gedit)    
+
+            
+
+
+
+
+
+
+
+    elif("exit"in user_input)or("out"in user_input):    
+        exit=os.system("exit")
+        print(exit)
+        break
+    else:
+        print("invalid input please enter valid input...!")    
